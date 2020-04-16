@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Mission to Mars</title>
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script lang="text/javascript">
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+    
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center" style="background-image: url('https://media.nature.com/lw800/magazine-assets/d41586-019-01981-2/d41586-019-01981-2_16846332.jpg'); background-size: cover">
+      <div class="container mt-10 ">
+        <h1>Mission to Mars</h1>
+        <hr class="my-5">
+        <p><a class="btn btn-danger btn-lg" href="/scrape" role="button">Refresh Mars Data</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+      <div class="row my-5" id="Nasa_Mars_News">
+        <div class="col-md-12">
+          <h2 class="heading">{{mars_news.news_title}}</h2>
+          <h6>{{mars_news.news_p}}</h6> 
+        </div>
+      </div>
+
+      <div class="row my-5" id="Featured_Mars_Image">
+        <div class="col-md-6">
+            <h2 class="heading my-3">Featured Mars Image</h2>
+            <h6 class="heading my-3">{{mars_news.featured_text}}</h6>
+              <a href="{{mars_news.featured_image_full_url}}" target=_blank>
+               <img width="650"  alt="Featured_Mars_Image" src="{{mars_news.featured_image_full_url}}">
+              </a>
+        </div> 
+        <div class="col-md-6">
+          <div class="card float-right mb-2" style="width:25rem">
+              <img class="card-img-top" src="/static/images/mars_weather.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">{{mars_news.mars_tweet}}</p>
+              </div>
+          </div> 
+          <div class="card float-right" style="width:25rem">
+              <div class="card-body">
+                <h3 class="card-title">Mars Facts</h3>
+                <table class="table table-sm">{{mars_news.mars_facts_table | safe}}</table>
+              </div>
+          </div>
+       </div>
+      </div>
+      <div class="row my-5" id="Mars_Hemispheres">
+        <div class="col-md-12">
+          <h3 class="heading text-center">Mars Hemispheres</h3>
+        </div>
+      </div>
+
+      <div class="row">
+          {% for image_info in mars_news.hemi_image_urls %}
+            <div class="col-md-6 p-10">
+                <h4 class="heading">{{image_info.title}}</h4>
+                <a href="{{image_info.image_full_url}}" target=_blank>
+                  <img height="550" alt="hemi_image" src="{{image_info.img_url}}">
+                </a>
+            </div> 
+          {% endfor %}     
+      </div>
+      <div class="row">
+        <div class="col-md-12";">
+          <footer>
+            <h6 class="heading mt-3">Posted by: Iron Analytics LLC.</h6>
+            <p>Contact information: <a href="mailto:angie.peck@gmail.com">
+            angie.peck@gmail.com</a>.</p>
+          </footer>
+        </div>
+    </div>
+  </div>  
+  
+</body>
+</html>
+
+
+
+

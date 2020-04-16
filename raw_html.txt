@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<title>Astropedia Search Results | USGS Astrogeology Science Center</title>
+		<meta name="description" content="USGS Astrogeology Science Center Astropedia search results."/>
+		<meta name="keywords" content="USGS,Astrogeology Science Center,Cartography,Geology,Space,Geological Survey,Mapping"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<meta name="google-site-verification" content="x61hXXVj7wtfBSNOPnTftajMsZ5yB2W-qRoyr7GtOKM"/>
+		<!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,bold"/>-->
+		<link rel="stylesheet" media="screen" href="/css/main.css"/>
+		<link rel="stylesheet" media="print" href="/css/print.css"/>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="/js/respond.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="/css/ie.css"/>
+                        <script>
+                          document.createElement('header');
+                          document.createElement('nav');
+                          document.createElement('section');
+                          document.createElement('article');
+                          document.createElement('aside');
+                          document.createElement('footer');
+                          document.createElement('hgroup');
+                        </script>
+                  <![endif]-->
+		<link rel="icon" type="image/x-ico" href="/favicon.ico"/>
+	</head>
+	<body id="results">
+		<header>
+<!--
+			<h1>Astrogeology Science Center</h1>
+-->
+			<a href="https://www.usgs.gov/centers/astrogeo-sc" style="float:right;margin-top:10px;" target="_blank" >
+				<img class="logo" height="60" src="/images/usgs_logo_main_2x.png" alt="USGS: Science for a Changing World"/>
+			</a>
+			<a href="https://nasa.gov" style="float:right;margin-top:5px;margin-right:20px;" target="_blank">
+				<img class="logo" height="65" src="/images/logos/nasa-logo-web-med.png" alt="NASA"/>
+			</a>
+			<a href="https://www.usgs.gov/centers/astrogeology-science-center/science/pds-cartography-and-imaging-sciences-node-usgs" style="float:right;margin-top:5px;margin-right: 10px;" target="_blank">
+				<img class="logo" height="65" src="/images/pds_logo-invisible-web.png" alt="PDS Cartography and Imaging Science Node"/>
+			</a>
+		</header>
+		<div class="wrapper">
+<!--
+			<nav>
+				<a id="nav-toggle" href="#" title="Navigation Menu">Menu</a>
+<ul class="dropdown dropdown-horizontal" id="yw0">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a>
+<ul>
+<li><a href="/about/careers">Careers</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/about/events">Events</a></li>
+<li><a href="/site/glossary">Glossary</a></li>
+<li><a href="/about/mission">Mission</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/people">People</a></li>
+<li><a href="/about/using-our-images">Using Our Images</a></li>
+<li><a href="/about/visitors">Visitors</a></li>
+</ul>
+</li>
+<li><a href="/facilities">Labs / Facilities</a>
+<ul>
+<li><a href="/facilities/flynn-creek-crater-sample-collection">Flynn Creek Crater Sample Collection</a></li>
+<li><a href="http://www.moon-cal.org">Lunar Calibration Project</a></li>
+<li><a href="/facilities/meteor-crater-sample-collection">Meteor Crater Sample Collection</a></li>
+<li><a href="/facilities/mrctr">MRCTR GIS Lab</a></li>
+<li><a href="/facilities/cartography-and-imaging-sciences-node-of-nasa-planetary-data-system">PDS Cartography and Imaging Sciences Node</a></li>
+<li><a href="/pds/annex">PDS IMG Annex</a></li>
+<li><a href="/facilities/photogrammetry-guest-facility">Photogrammetry Guest Facility</a></li>
+<li><a href="/rpif">Regional Planetary Information Facility (RPIF)</a></li>
+</ul>
+</li>
+<li><a href="/maps">Maps / Products</a>
+<ul>
+<li><a href="/search">Product Search</a></li>
+<li><a href="http://planetarynames.wr.usgs.gov">Gazetteer of Planetary Nomenclature</a></li>
+<li><a href="http://planetarymapping.wr.usgs.gov">Geologic Mapping Program</a></li>
+<li><a href="http://pilot.wr.usgs.gov">Planetary Image Locator Tool (PILOT)</a></li>
+<li><a href="/search/planetary-index">Planetary Map Index</a></li>
+</ul>
+</li>
+<li><a href="/geology">Missions / Research</a>
+<ul>
+<li><a href="/geology/mars-dunes">Mars Dunes</a></li>
+<li><a href="/geology/mars-ice">Mars Ice</a></li>
+<li><a href="/missions">Mission Support</a></li>
+<li><a href="/solar-system">Solar System</a></li>
+<li><a href="/groups">Working Groups</a></li>
+</ul>
+</li>
+<li><a href="/tools">Tools</a>
+<ul>
+<li><a href="http://planetarynames.wr.usgs.gov">Gazetteer of Planetary Nomenclature</a></li>
+<li><a href="http://isis.astrogeology.usgs.gov">Integrated Software for Imagers and Spectrometers (ISIS)</a></li>
+<li><a href="http://astrogeology.usgs.gov/tools/map-a-planet-2">Map a Planet 2</a></li>
+<li><a href="http://pilot.wr.usgs.gov">Planetary Image Locator Tool (PILOT)</a></li>
+<li><a href="http://astrocloud.wr.usgs.gov/">Projection on the Web (POW)</a></li>
+</ul>
+</li>
+</ul>				<form id="search" class="search" action="/search/results" method="get">
+					<input type="submit" value="" title="Search Astropedia"/>
+					<input type="text" placeholder="Search" name="q"/>
+				</form>
+			</nav>
+-->
+			<div class="container">
+				<div class="widget block bar">
+  <a style="float:right;text-decoration:none;" href="/search">
+		<img style="width:200px;border:none;float:right;" src="/images/astropedia/astropedia-logo-main.png" alt="Astropedia"/>
+		<div style="clear:both;font-size:.8em;float:right;color:#888;">Lunar and Planetary Cartographic Catalog</div>
+  </a>
+   <div style="float:left;height:60px;">
+   </div>
+</div>
+<form id="search-bar" class="bar widget block" action="/search/results">
+  <input type="hidden" value="hemisphere-enhanced" name="q"/>
+  <input type="hidden" value="Mars" name="target"/><input type="hidden" name="__ncforminfo" value="esDtadrmUJgGcM5Ihp-bTl6_NRhWBB-XG3WqqBua1IBrkjpNoYUQpjx-m5S1M0qkDsGdefQLpLeWIeNlpc_qlE43b-StyiPpFRPsovTvon1bTm4PnFjovA=="/></form><div class="full-content">
+	<section id="results-accordian" class="block">
+	<div id="product-section" data-section="product" class="result-list ">
+		<div class="accordian">
+			<h2>Products</h2>
+			<span class="count">4 Results</span>
+			<span class="collapse">Collapse</span>
+		</div>
+		<div class="collapsible results">
+<div class="item"><a href="/search/map/Mars/Viking/cerberus_enhanced" class="itemLink product-item"><img class="thumb" src="/cache/images/dfaf3849e74bf973b59eb50dab52b583_cerberus_enhanced.tif_thumb.png" alt="Cerberus Hemisphere Enhanced thumbnail"><div class="description"><h3>Cerberus Hemisphere Enhanced</h3></a><span class="subtitle" style="float:left">image/tiff 21 MB</span><span class="pubDate" style="float:right"></span><br/><p>Mosaic of the Cerberus hemisphere of Mars projected into point perspective, a view similar to that which one would see from a spacecraft. This mosaic is composed of 104 Viking Orbiter images acquired&hellip;</p></div> <!-- end description --></div><div class="item"><a href="/search/map/Mars/Viking/schiaparelli_enhanced" class="itemLink product-item"><img class="thumb" src="/cache/images/7677c0a006b83871b5a2f66985ab5857_schiaparelli_enhanced.tif_thumb.png" alt="Schiaparelli Hemisphere Enhanced thumbnail"><div class="description"><h3>Schiaparelli Hemisphere Enhanced</h3></a><span class="subtitle" style="float:left">image/tiff 35 MB</span><span class="pubDate" style="float:right"></span><br/><p>Mosaic of the Schiaparelli hemisphere of Mars projected into point perspective, a view similar to that which one would see from a spacecraft. The images were acquired in 1980 during early northern&hellip;</p></div> <!-- end description --></div><div class="item"><a href="/search/map/Mars/Viking/syrtis_major_enhanced" class="itemLink product-item"><img class="thumb" src="/cache/images/aae41197e40d6d4f3ea557f8cfe51d15_syrtis_major_enhanced.tif_thumb.png" alt="Syrtis Major Hemisphere Enhanced thumbnail"><div class="description"><h3>Syrtis Major Hemisphere Enhanced</h3></a><span class="subtitle" style="float:left">image/tiff 25 MB</span><span class="pubDate" style="float:right"></span><br/><p>Mosaic of the Syrtis Major hemisphere of Mars projected into point perspective, a view similar to that which one would see from a spacecraft. This mosaic is composed of about 100 red and violet&hellip;</p></div> <!-- end description --></div><div class="item"><a href="/search/map/Mars/Viking/valles_marineris_enhanced" class="itemLink product-item"><img class="thumb" src="/cache/images/04085d99ec3713883a9a57f42be9c725_valles_marineris_enhanced.tif_thumb.png" alt="Valles Marineris Hemisphere Enhanced thumbnail"><div class="description"><h3>Valles Marineris Hemisphere Enhanced</h3></a><span class="subtitle" style="float:left">image/tiff 27 MB</span><span class="pubDate" style="float:right"></span><br/><p>Mosaic of the Valles Marineris hemisphere of Mars projected into point perspective, a view similar to that which one would see from a spacecraft. The distance is 2500 kilometers from the surface of&hellip;</p></div> <!-- end description --></div><script>addBases=[];;if(typeof resetLayerSwitcher==="function"){resetLayerSwitcher(false)};var productTotal = 4;</script>
+</div> <!-- end this-section -->
+</div>
+
+
+
+	</section>
+</div>
+
+			</div>
+							<div class="icons projects black scroll-wrapper">
+					<div class="scroll">
+						<a title="Integrated Software for Imagers and Spectrometers" href="http://isis.astrogeology.usgs.gov" class="icon">
+							<img alt="ISIS Logo" height="112" width="112" src="/images/logos/isis_2x.jpg"/>
+							<span class="label">ISIS</span>
+						</a>
+						<a title="Gazetteer of Planetary Nomenclature" href="http://planetarynames.wr.usgs.gov" class="icon">
+							<img alt="Nomenclature Logo" height="112" width="112" src="/images/logos/nomenclature_2x.jpg"/>
+							<span class="label">Planetary Nomenclature</span>
+						</a>
+						<a title="Map a Planet 2" href="https://astrogeology.usgs.gov/tools/map-a-planet-2" class="icon">
+							<img alt="Map-a-Planet Logo" height="112" width="112" src="/images/logos/map_a_planet_2x.jpg"/>
+							<span class="label">Map a Planet 2</span>
+						</a>
+						<a title="PDS Cartography and Imaging Science Node" href="https://www.usgs.gov/centers/astrogeo-sc/science/cartography-and-imaging-sciences-node-nasa-planetary-data-system" class="icon">
+							<img alt="PDS Logo" height="112" src="/images/pds_logo-black-web.png"/>
+							<span class="label">PDS Cartography and Imaging Science Node</span>
+						</a>
+<!--
+						<a title="Astropedia Search" href="/search" class="icon">
+							<img alt="Astropedia Logo" height="112" width="112" src="/images/logos/astropedia_2x.jpg"/>
+							<span class="label">Astropedia</span>
+						</a>
+-->
+						<a title="Regional Planetary Image Facility" href="https://www.usgs.gov/centers/astrogeo-sc/science/regional-planetary-image-facility-rpif" class="icon">
+							<img alt="RPIF Logo" height="112" width="112" src="/images/logos/rpif_2x.jpg"/>
+							<span class="label">RPIF</span>
+						</a>
+						<a title="Photogrammetry Guest Facility" href="" class="icon">
+							<img alt="Photogrammetry Guest Faciltiy Logo" height="112" width="112" src="/images/logos/photogrammetry_2x.jpg"/>
+							<span class="label">Photogrammetry Guest Facility</span>
+						</a>
+						<a title="Planetary Image Locator Tool" href="http://pilot.wr.usgs.gov" class="icon">
+							<img alt="Pilot Logo" height="112" width="112" src="/images/logos/pilot_2x.jpg"/>
+							<span class="label">PILOT</span>
+						</a>
+						<a title="Mapping, Remote-sensing, Cartography, Technology and Research GIS Lab" href="https://www.usgs.gov/centers/astrogeo-sc/science/mrctr-gis-lab" class="icon">
+							<img alt="MRCTR GIS Lab Logo" height="112" width="112" src="/images/logos/mrctr_man_2x.png"/>
+							<span class="label">MRCTR GIS Lab</span>
+						</a>
+					</div>
+				</div>
+						<footer>
+				<div class="left">
+					<a href="http://astrogeology.usgs.gov/search">Search</a> |
+					<a href="http://astrogeology.usgs.gov/maps/about">About</a> |
+					<a href="http://astrogeology.usgs.gov/maps/contact">Contact</a>
+				</div>
+				<div class="right">
+                                        <a href="https://www.usgs.gov/centers/astrogeo-sc">USGS Astrogeology Science Center</a>
+				</div>
+			</footer>
+		</div>
+<!--
+		<div class="credit">
+			<small>Background Credits: NASA/USGS</small>
+		</div>
+-->
+		<div class="page-background" style="
+			background:url('/images/backgrounds/mars.jpg');
+			filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+				src='/images/backgrounds/mars.jpg', sizingMethod='scale');
+		"></div>
+		<script type="text/javascript">
+var baseUrl = "";
+
+/*
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-27613186-1']);_gaq.push(['_trackPageview']);(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+*/
+		</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/general.js"></script>
+</body>
+</html>
